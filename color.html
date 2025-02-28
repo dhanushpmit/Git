@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Simple Web App</title>
+</head>
+<body>
+    <nav>
+        <h1>My Web App</h1>
+    </nav>
+    <div class="container">
+        <h2>Welcome to My Web App</h2>
+        <p>Click the button below to change the background color.</p>
+        <button onclick="changeColor()">Change Color</button>
+    </div>
+    <script>
+        changeColor=()=> {
+            document.body.style.backgroundColor = getRandomColor();
+        }
+        getRandomColor=()=> {
+            let letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+</body>
+</html>
