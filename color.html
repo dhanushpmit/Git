@@ -10,10 +10,15 @@
         <h2>Welcome to My Web App</h2>
         <p>Click the button below to change the background color.</p>
         <button onclick="changeColor()">Change Color</button>
+        <p>Click the button below to change the text color.</p>
+        <button onclick="changeTextColor()">Change Text Color</button>
     </div>
     <script>
         changeColor=()=> {
             document.body.style.backgroundColor = getRandomColor();
+        }
+        changeTextColor=()=> {
+            document.body.style.color = getRandomColor();
         }
         getRandomColor=()=> {
             let letters = '0123456789ABCDEF';
