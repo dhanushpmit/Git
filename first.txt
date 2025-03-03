@@ -1,3 +1,5 @@
 My first workflow
 
 release v.1.0
+
+fixing bug
